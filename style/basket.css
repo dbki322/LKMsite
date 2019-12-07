@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'YellowPeas';
+    src: url('../fonts/YellowPeas.otf') ;
+}@font-face {
+  font-family: 'Leftonade-Regular';
+  src: url('../fonts/Leftonade-Regular.otf') ;
+}
+html{
+  height:100%;
+  min-height:100%;
+ }
+body {min-height:100%;
+   
+    background: #ffffff;
+    padding:0;
+    margin: 0;
+    font-family: 'YellowPeas', sans-serif;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li:nth-child(2){margin-left: auto;}
+
+.menu li:nth-child(2):hover,.menu li:nth-child(3):hover {
+  background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='390px' height='50px' viewBox='0 0 390 50' enable-background='new 0 0 390 50' xml:space='preserve'%3E%3Cpath fill='none' stroke='%23f4a041' stroke-width='1.5' stroke-miterlimit='10' d='M0,47.585c0,0,97.5,0,130,0 c13.75,0,28.74-38.778,46.168-19.416C192.669,46.5,243.603,47.585,260,47.585c31.821,0,130,0,130,0'/%3E%3C/svg%3E%0A") no-repeat;
+  animation: line 1.2s;
+  background-position: 100% 50%;
+}
+
+.menu li:hover a {
+  color: rgb(244, 160, 65);
+}
+
+
+@keyframes line {
+  0% {
+      background-position-x: 390px;
+  }
+}
+
+/**/
+
+ul.sidenav li:first-child {
+    margin: 0px;
+    float: left; 
+}
+
+ul.sidenav {
+    font-size: 35px;
+    z-index:9999;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    height: auto;
+	background-color:rgba(0, 0, 0, 0.4);
+	overflow: auto;
+  }
+  
+  ul.sidenav li a {
+    float: right;
+    padding: 20px;
+	display: block;
+	color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+   
+ 
+
+#contener{padding-top:150px;}
+#title{margin:auto; width:310px;}
+#title a{font-family: 'Leftonade',sans-serif; font-size:40px; color:#000000; text-decoration: none;}
+.slash-h{width:40%;margin:auto;display:block;text-align:center;border-bottom:1px solid #AAA;}
+#card-contener{height:45%;width:80%; margin:auto;}
+.card{width:33%; display:block; float:left; border:1px solid #AAA; margin: 15px auto 15px auto; border-radius:5px;}
+.card img{width:100%;}
+.grey{background-color:grey;}
+.card{position:relative;}
+img{display:block;}
+.overlay {position: absolute;bottom: 100%;left: 0;right: 0;background-color: rgba(255, 255, 255, 0.4);overflow: hidden;width: 100%;height:0;transition: .5s ease;}
+.card:hover .overlay {bottom: 0;height: 100%;}
+h3{text-align:center; font-family: 'Leftonade',sans-serif;}
+.p-product{color:#000; margin:0px 30px; font-size:100%; font-family: 'Leftonade',sans-serif;}
+.price{display:block;}
+.price{background:rgba(21, 216, 15,0.7); width:80%; text-align:center;padding:10px 0px;}
+.buy{background:rgba(214, 32, 19,0.7); width:80%; text-align:center;padding:10px 0px;display:inline-block;color:#FFF;}
+.buy-info{color:#FFF;width:80%; margin:auto;}
+
+
+input[type=submit]{display:inline-block;
+  background: none;
+  color:#000; font-size:15px;
+    width:80%;
+    border:none;
+  background: rgba(0,0,0,0);
+  color: #FFF;
+}
+input{float:left; border:none;display:inline-block;
+color:#000; font-size:15px;
+width:80px;
+  background: rgba(0,0,0,0);
+  color: #FFF;
+}
+#end{margin: 30px;
+    height:300px;
+    width:400px;
+}
+input[type=submit].buy_but{color:black;
+  width:170px;
+  height: 50px;
+  margin-left:30px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  color: #7D7769;
+  font-weight: bold;
+  background: #FF9D73;
+  color: #3A3D52;
+  margin:20px 140px 30px;
+}
+input[type=submit]:hover.buy_but{
+  background:#FF8652;
+}
+ .contacts{
+     margin:50px;
+ }
+@media screen and (max-width: 1200px){.card{width:49%;}}
+@media screen and (max-width: 670px){
+  #contener{padding-top:50px;}
+  ul.sidenav {
+    font-size: 15px;}
+  li a img{width:50%;height: 50%;}
+  .card{width:100%;}}
+  @media screen and (max-width: 400px){
+.card grey a img{width:200px;height: 200px;}
+  ul.sidenav {
+    font-size: 10px;}
+    li a img{width:70%;height: 70%;}
+  }

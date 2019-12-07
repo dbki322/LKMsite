@@ -1,0 +1,326 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html{
+  background-color: #252326;
+
+}
+h1, h2, h3, h4, h5{
+  margin-top: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 21px;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+::selection {
+  background: #fb6868;
+  color: #ffffff;
+}
+
+table {
+  position: relative;
+  top: -260px;
+}
+
+th {
+    color:#fff;
+  font-weight: 700;
+  background: #3470A2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: -.07em;
+  text-align: center;
+  padding: 12px 30px;
+  transition: 0.33s ease;
+}
+
+th:hover {
+  cursor: pointer;
+  background: #3470A2;
+}
+
+td {
+  color:#fff;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  text-align: center;
+  padding: 15px 12px;
+  background: #2E3532;
+  transition: 0.33s ease;
+}
+
+td:not(:last-child) {
+  border-right: 1px solid #414744;
+}
+
+tr td:first-child {
+  text-align: left;
+}
+
+td:hover {
+  background: #414744;
+  cursor: pointer;
+}
+input{
+  color:black;
+  width:170px;
+  height: 50px;
+  margin-left:30px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  color: #7D7769;
+  font-weight: bold;
+}
+input:focus{
+  border:1px solid rgba(255,109,46,0.6);
+  box-shadow: 0 0 3px rgba(255,109,46,0.6);
+  outline: none;
+  font-size: 1.1em;
+}
+
+
+::-webkit-input-placeholder {
+
+  opacity: 0.5;
+}
+
+#add {
+  width: 100%;
+  position: absolute;
+  background: #3470A2;
+  color: #fff;
+  top: 100%;
+  left: calc(100% - 150px);
+}
+
+#add:hover {
+  background: #3F88C5;
+}
+
+#remove {
+  width: 100%;
+  position: absolute;
+  background: #E63946;
+  color: #fff;
+  top: 100%;
+  left: calc(100% - 300px);
+}
+
+#remove:hover {
+  background: #E84B56;
+}
+
+.brick{
+  display: inline-block;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  background-color: #e7e7e7;
+  vertical-align: top;
+}
+.pages div {    
+  font-family: sans-serif;
+  padding-top: 300px;
+  color: #fff;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
+}
+.icon img{
+ 
+  width: 95%;
+  height: 85%;
+  margin: 10% 0 0 2%;
+
+}
+
+header div.block{
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+header h1{
+  margin-bottom: 0;
+  font-size: 28px;
+}
+
+header a{
+  color: #a93447;
+}
+
+nav{
+  margin-bottom: 32px;
+}
+
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul li a.brick{
+  position: relative;
+  font-family: inherit;
+  font-weight: inherit;
+  color: #616161;
+  color: #252326;
+  line-height: 2;
+  background-color: #252326;
+  background-color: #F3F3F3;
+  background-color: #e7e7e7;
+  border-left: 3px solid #616161
+}
+
+nav ul li a.brick .icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 64px;
+  width: 64px;
+  font-size: 2em;
+  color: #fff;
+  line-height: 2.25;
+  background: #616161;
+}
+
+nav ul li a.services{
+  border-color: #B93861;
+}
+
+nav ul li a.services .icon{
+  background-color: #B93861;
+}
+
+nav ul li a.orders{
+  border-color: #34ABD7;
+}
+
+nav ul li a.orders .icon{
+  background-color: #34ABD7;
+}
+
+nav ul li a.admin{
+  border-color: #158A53;
+}
+
+nav ul li a.admin .icon{
+  background-color: #158A53;
+}
+
+nav ul li a.users{
+  border-color: #D95235;
+}
+
+nav ul li a.users .icon{
+  background-color: #D95235;
+}
+
+
+
+  nav{
+    position: absolute;
+    width: 250px;
+  }
+caption {
+  text-align: left;
+  color: rgb(114, 109, 109);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+
+  #content{
+    min-height: 100%;
+    margin-left: 282px;
+    font-size: 0;
+  }
+
+  #content .brick{
+    min-height: 120px;
+    min-width: 120px;
+    background: #252326;
+    background: #a93447;
+    background: #F3F3F3;
+    background-color: #e7e7e7;
+    font-size: 16px;
+  }
+  td.tdcancel:hover{
+    background: rgba(0,0,0,0);  
+  }
+ .tdcancel{
+     background:rgba(0,0,0,0);
+     padding:0;
+     margin:10;
+ }
+ .cancel{
+     border:none;
+     width:60px;
+     height:60px;
+     padding:0;
+     margin:20px 0 0 5px;
+     background:url(../img/cancel.png);
+     background-repeat:no-repeat;
+      background-size:45px auto;
+ }
+ 
+   form{
+      position: relative;
+       top:-260px;
+   }
+   .tdcancel form{top:inherit;}
+    button .button{padding:0;}
+
+input[type=submit]{
+  background: #FF9D73;
+  color: #3A3D52;
+  margin:20px 140px 30px;
+}
+input[type=submit]:hover{
+  background:#FF8652;
+}
+input[type=submit].cancel {
+       background:url(../img/cancel.png);
+       background-repeat:no-repeat;
+       background-size:45px auto;
+    color: #3A3D52;
+    margin: 0;
+}
+#load{color:rgb(114, 109, 109);}
+#click{
+    width:80%;
+}
+td img{
+    width:100px;}
+.descr{font-size:70%;}
