@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Leftonade-Regular';
+    src: url('../fonts/Leftonade-Regular.otf');} 
+
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(244, 160, 65, 0.1) 10%, rgba(244, 92, 65, 0.6)), url('../img/ahmed-muntasir-1261783-unsplash.jpg') no-repeat;
+    background-position: 100% 30%;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.container h1 {
+    font-family: 'Leftonade-Regular',sans-serif;
+    display: block;
+    width: auto;
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.87);
+    margin: 0;
+    line-height: 80%;
+    text-shadow: 3px 6px 0 rgba(50, 50, 50, 0.15);
+}
+
+.container h2 {
+    padding: 10px;
+    font-family: 'Leftonade-Regular',sans-serif;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 1.5em;
+    font-weight: 00;
+    letter-spacing: .3em;
+    background: rgba(50, 50, 50, 0.15);
+}
+
+.container .btn {
+    position: relative;
+    top: 10vmin;
+    background: rgba(50, 50, 50, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    padding: 10px 20px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 1.5em;
+    font-family: 'Leftonade-Regular',sans-serif;
+    box-shadow: 3px 3px 0 rgba(50, 50, 50, 0.15);
+}
+
+.container .btn:hover {
+    background: rgba(50, 50, 50, 0.15);
+}
+
+.container .btn a {
+    color: inherit;
+    text-decoration: none;
+}
